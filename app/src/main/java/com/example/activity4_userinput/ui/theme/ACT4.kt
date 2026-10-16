@@ -49,6 +49,7 @@ fun FormDataDiri(modifier: Modifier){
             gender.forEach {item ->
                 Row(modifier = modifier.selectable(
                     selected = textJK == item,
+                    onClick = {textJK = item}
                 )) { }
         }
 
