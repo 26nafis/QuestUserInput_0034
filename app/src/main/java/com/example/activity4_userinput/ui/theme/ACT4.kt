@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.RadioButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -50,7 +51,9 @@ fun FormDataDiri(modifier: Modifier){
                 Row(modifier = modifier.selectable(
                     selected = textJK == item,
                     onClick = {textJK = item}
-                ), verticalAlignment = aligment.CenterVertically) { }
+                ), verticalAlignment = aligment.CenterVertically) {
+                    RadioButton()
+                }
         }
 
         }
